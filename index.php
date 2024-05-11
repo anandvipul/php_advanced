@@ -21,6 +21,25 @@ while(!feof($myFile)) {
     echo "<br>";
 }
 fclose($myFile);
+
+echo "<hr>";
+
+$myFile = fopen("open.txt", "w") or die ("Unable to open the file");
+$txt = "John Doe \n";
+
+fwrite($myFile, $txt);
+
+fwrite($myFile, "My File");
+fclose($myFile);
+
+$myFile = fopen("open.txt", "w") or die ("Unable to open the file");
+$txt = "John Doerr \n";
+
+fwrite($myFile, $txt);
+
+// fwrite($myFile, "My File");
+fclose($myFile);
+
     ?>
 </body>
 </html>
