@@ -13,7 +13,6 @@ setcookie($cookie_name, $cookie_value, time() + 86400*30, "/");
     <title>PHP Advanced</title>
 </head>
 <body>
-<<<<<<< HEAD
 <?php
     if (!isset($_COOKIE[$cookie_name])) {
         echo "Cookie named ". $cookie_name."'is not set!";
@@ -23,7 +22,6 @@ setcookie($cookie_name, $cookie_value, time() + 86400*30, "/");
     }
 
 ?>
-=======
     <?php
 echo readfile("temp.txt");
 echo "<hr>";
@@ -65,6 +63,5 @@ fclose($myFile);
   <input type="file" name="fileToUpload" id="fileToUpload">
   <input type="submit" value="Upload Image" name="submit">
 </form>
->>>>>>> php_file_handling
 </body>
 </html>
